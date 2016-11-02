@@ -1,10 +1,10 @@
 # image for postgis
 
-FROM postgres:9.6
+FROM mapdb.cn:5000/postgres:9.6
 
 MAINTAINER mapdb <mapdb2014@gmail.com>
 
-RUN sed -i 's/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/mirrors.tuna.tsinghua.edu.cn\/ubuntu\//g' /etc/apt/sources.list
+RUN sed -i 's/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/mirrors.aliyun.com\/ubuntu\//g' /etc/apt/sources.list
 
 ENV POSTGIS_MAJOR 2.3
 ENV POSTGIS_VERSION 2.3.0+dfsg-2.pgdg80+1
